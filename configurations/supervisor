@@ -1,0 +1,10 @@
+[supervisord]
+nodaemon = true
+
+[program:deno]
+autostart = true
+command = /usr/bin/deno run
+
+[program:caddy]
+autostart = true
+command = /usr/bin/caddy run --config /etc/caddy/Caddyfile

@@ -1,0 +1,10 @@
+# Listen on port 80
+:80
+
+# Match API requests
+reverse_proxy /api/* :8000
+
+# Match static requests
+file_server /* {
+    root /app/frontend
+}
