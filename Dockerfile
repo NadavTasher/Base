@@ -4,9 +4,6 @@ FROM debian:buster-slim
 EXPOSE 80
 # Change working directory
 WORKDIR /app
-# Install utilities
-RUN apt-get update
-RUN apt-get -y install --no-install-recommends --no-install-suggests supervisor
 # Copy binaries
 COPY binaries/deno /usr/bin/deno
 COPY binaries/caddy /usr/bin/caddy
