@@ -17,8 +17,4 @@ RUN chmod +x /usr/bin/caddy
 COPY configurations/caddy /etc/caddy/Caddyfile
 COPY configurations/supervisor /etc/supervisor/conf.d/supervisord.conf
 # Configure entrypoint
-#ENTRYPOINT ["/usr/bin/deno"]
-# Configure command
-#CMD ["/bin/bash"]
-#CMD ["supervisord"]
-CMD ["/usr/bin/caddy", "run", "--config", "/etc/caddy/Caddyfile"]
+ENTRYPOINT cd /etc/caddy && caddy start; deno $@;

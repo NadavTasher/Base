@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038e9fa5-90b6-4f73-961b-aacd84c3b13c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurations/caddy.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurations/entrypoint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/caddy" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/caddy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -35,6 +35,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Dockerfile" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
@@ -119,12 +120,24 @@
       <updated>1598646593008</updated>
       <workItem from="1598646596906" duration="3658000" />
       <workItem from="1598650961669" duration="7000" />
-      <workItem from="1598650993114" duration="2952000" />
+      <workItem from="1598650993114" duration="4116000" />
     </task>
+    <task id="LOCAL-00001" summary="New configurations">
+      <created>1598777955758</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598777955758</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="New configurations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="215" width="800" height="684" key="#JSON_Schema_Mappings" timestamp="1598777704158">
@@ -135,14 +148,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1598651648215" />
-    <state x="689" y="357" width="532" height="400" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598651723754">
+    <state x="689" y="357" width="533" height="407" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598778128605">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="689" y="357" width="532" height="400" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1598651723754" />
+    <state x="689" y="357" width="533" height="407" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1598778128605" />
     <state x="693" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598777759802">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1598777759802" />
+    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2" timestamp="1598777955336">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1598777955336" />
     <state x="743" y="297" width="424" height="519" key="FileChooserDialogImpl" timestamp="1598649364064">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -159,6 +176,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="464" y="188" width="992" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1598651695110" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1598777956075">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1598777956075" />
     <state x="862" y="461" width="186" height="190" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1598651646444">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
