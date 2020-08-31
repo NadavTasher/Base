@@ -4,6 +4,7 @@
     <list default="true" id="038e9fa5-90b6-4f73-961b-aacd84c3b13c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/supervisor" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,8 @@
       <updated>1598646593008</updated>
       <workItem from="1598646596906" duration="3658000" />
       <workItem from="1598650961669" duration="7000" />
-      <workItem from="1598650993114" duration="5513000" />
+      <workItem from="1598650993114" duration="6199000" />
+      <workItem from="1598897758424" duration="1318000" />
     </task>
     <task id="LOCAL-00001" summary="New configurations">
       <created>1598777955758</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598779772909</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New configurations">
+      <created>1598780847585</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598780847585</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,14 +181,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="689" y="357" width="533" height="407" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1598778128605" />
-    <state x="693" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598777759802">
+    <state x="693" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598897787758">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="693" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1598777759802" />
-    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2" timestamp="1598779772572">
+    <state x="693" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1598897787758" />
+    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2" timestamp="1598780847220">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1598779772572" />
+    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1598780847220" />
     <state x="743" y="297" width="424" height="519" key="FileChooserDialogImpl" timestamp="1598649364064">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -196,10 +205,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="464" y="188" width="992" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1598651695110" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1598779773116">
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1598780847835">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1598779773116" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1598780847835" />
     <state x="862" y="461" width="186" height="190" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1598651646444">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
