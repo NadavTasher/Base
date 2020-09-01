@@ -8,8 +8,9 @@
 :80
 
 # Match API requests
-reverse_proxy /api/* {
-    to :8000
+route /api/* {
+	uri strip_prefix /api
+	reverse_proxy :8000
 }
 
 # Match static requests
