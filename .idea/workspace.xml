@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="038e9fa5-90b6-4f73-961b-aacd84c3b13c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/caddy" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/caddy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binaries/deno" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -32,6 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Dockerfile" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -121,7 +128,8 @@
       <workItem from="1598650961669" duration="7000" />
       <workItem from="1598650993114" duration="6199000" />
       <workItem from="1598897758424" duration="2104000" />
-      <workItem from="1598959395313" duration="382000" />
+      <workItem from="1598959395313" duration="462000" />
+      <workItem from="1601016838339" duration="758000" />
     </task>
     <task id="LOCAL-00001" summary="New configurations">
       <created>1598777955758</created>
@@ -165,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598899274455</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Configuration update for prefix stripping">
+      <created>1598959790464</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598959790464</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +189,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New configurations" />
     <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <MESSAGE value="Configuration update for prefix stripping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuration update for prefix stripping" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="215" width="800" height="684" key="#JSON_Schema_Mappings" timestamp="1598777704158">
@@ -193,10 +209,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="303" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1598897787758" />
-    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2" timestamp="1598899274101">
+    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2" timestamp="1598959790097">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1598899274101" />
+    <state x="554" y="114" width="802" height="886" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1598959790097" />
     <state x="743" y="297" width="424" height="519" key="FileChooserDialogImpl" timestamp="1598649364064">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -213,10 +229,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="464" y="188" width="992" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1598651695110" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1598899274778">
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1598959790679">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1598899274778" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1598959790679" />
     <state x="862" y="461" width="186" height="190" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1598651646444">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
