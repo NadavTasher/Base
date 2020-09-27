@@ -20,10 +20,10 @@ jobs:
           buildx-version: latest
           skip-cache: false
           qemu-version: latest
-      
+
       - name: Login to hub
         run: echo "${{ secrets.TOKEN }}" | docker login -u "${{ secrets.NAME }}" --password-stdin
-      
-      - name: Build & Push images
+
+      - name: Build and push
         run: |
-          docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6 -t nadavtasher/base:latest . --push
+          docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7 -t nadavtasher/base:latest . --push
