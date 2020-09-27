@@ -1,4 +1,4 @@
-name: buildx
+name: Build and push multi-arch images
 
 on:
   pull_request:
