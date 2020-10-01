@@ -8,22 +8,20 @@ LABEL description="A simple Node & Caddy base image."
 # Expose ports
 EXPOSE 80
 
-# Install CA certificates for Gemfury
+# Update package indexes and install certificates
 RUN apt-get update
 RUN apt-get -y install ca-certificates
 
 # Add Caddy's Gemfury repository to apt sources
 RUN echo "deb [trusted=yes] https://repo.fury.io/caddy/ /" > /etc/apt/sources.list.d/caddy.list
 
-# Install Caddy
+# Update package indexes and install caddy
 RUN apt-get update
-RUN apt-get -y install caddy=2.2.0
+RUN apt-get -y install caddy
 
-# Copy Caddy configuration
+# Copy configurations
+COPY configurations/node /tmp/default.mjs
 COPY configurations/caddy /etc/caddy/Caddyfile
-
-# Copy default Node script
-COPY configurations/default /tmp/default.mjs
 
 # Create application directories
 RUN mkdir /app /app/frontend /app/backend
@@ -32,7 +30,7 @@ RUN mkdir /app /app/frontend /app/backend
 WORKDIR /app
 
 # Configure entrypoint
-ENTRYPOINT cd /etc/caddy && caddy start; cd /app/backend && node $0 $@;
+ENTRYPOINT cd /etc/caddy; caddy start &> /dev/null; cd /app/backend; node $0;
 
 # Configure command
 CMD ["/tmp/default.mjs"]
