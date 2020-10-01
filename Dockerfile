@@ -30,7 +30,7 @@ RUN mkdir /app /app/frontend /app/backend
 WORKDIR /app
 
 # Configure entrypoint
-ENTRYPOINT cd /etc/caddy; caddy start &> /dev/null; cd /app/backend; node $0;
+ENTRYPOINT cd /etc/caddy; caddy start > /dev/null 2>&1; cd /app/backend; node $0;
 
 # Configure command
 CMD ["/tmp/default.mjs"]
