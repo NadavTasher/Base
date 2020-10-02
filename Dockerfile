@@ -1,5 +1,5 @@
 # Select initial base image
-FROM node:buster-slim
+FROM debian:buster-slim
 
 # Set image metadata
 LABEL maintainer="hey@nadav.app"
@@ -8,29 +8,41 @@ LABEL description="A simple Node & Caddy base image."
 # Expose ports
 EXPOSE 80
 
-# Update package indexes and install certificates
+# Update package indexes
 RUN apt-get update
-RUN apt-get -y install ca-certificates
 
-# Add Caddy's Gemfury repository to apt sources
-RUN echo "deb [trusted=yes] https://repo.fury.io/caddy/ /" > /etc/apt/sources.list.d/caddy.list
+# APT and GPG configurations
+COPY configurations/gpg/node /etc/apt/trusted.gpg.d/node.gpg
+COPY configurations/apt/node /etc/apt/sources.list.d/node.list
+COPY configurations/apt/caddy /etc/apt/sources.list.d/caddy.list
 
-# Update package indexes and install caddy
+# Install CA certificates
+RUN apt-get --yes install ca-certificates
+
+# Update package indexes
 RUN apt-get update
-RUN apt-get -y install caddy
+
+# Install Caddy & Node
+RUN apt-get --yes install caddy nodejs
+
+# Remove sources lists
+RUN rm /etc/apt/sources.list.d/*
+
+# Update package indexes
+RUN apt-get update
 
 # Copy configurations
-COPY configurations/node /tmp/default.mjs
-COPY configurations/caddy /etc/caddy/Caddyfile
+COPY configurations/services/node /etc/node/default.mjs
+COPY configurations/services/caddy /etc/caddy/Caddyfile
 
 # Create application directories
-RUN mkdir /app /app/frontend /app/backend
+RUN mkdir /project /project/frontend /project/backend
 
 # Change working directory
-WORKDIR /app
+WORKDIR /project
 
 # Configure entrypoint
-ENTRYPOINT cd /etc/caddy; caddy start > /dev/null 2>&1; cd /app/backend; node $0;
+ENTRYPOINT cd /etc/caddy; caddy start > /dev/null 2>&1; cd /project/backend; node $0;
 
-# Configure command
-CMD ["/tmp/default.mjs"]
+# Configure default command
+CMD ["/etc/node/default.mjs"]
