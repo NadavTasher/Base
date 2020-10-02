@@ -15,5 +15,5 @@ route /api/* {
 
 # Match static requests
 file_server /* {
-    root /app/frontend
+    root /project/frontend
 }
