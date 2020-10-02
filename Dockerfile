@@ -9,7 +9,7 @@ LABEL description="A simple Node & Caddy base image."
 EXPOSE 80
 
 # Update package indexes
-RUN apt-get update
+RUN apt update
 
 # APT and GPG configurations
 COPY configurations/gpg/node /etc/apt/trusted.gpg.d/node.gpg
@@ -17,19 +17,19 @@ COPY configurations/apt/node /etc/apt/sources.list.d/node.list
 COPY configurations/apt/caddy /etc/apt/sources.list.d/caddy.list
 
 # Install CA certificates
-RUN apt-get --yes install ca-certificates
+RUN apt --yes install ca-certificates
 
 # Update package indexes
-RUN apt-get update
+RUN apt update
 
 # Install Caddy & Node
-RUN apt-get --yes install caddy nodejs
+RUN apt --yes install caddy nodejs
 
 # Remove sources lists
 RUN rm /etc/apt/sources.list.d/*
 
 # Update package indexes
-RUN apt-get update
+RUN apt update
 
 # Copy configurations
 COPY configurations/services/node /etc/node/default.mjs
