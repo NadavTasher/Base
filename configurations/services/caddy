@@ -7,6 +7,11 @@
 # Listen on port 80
 :80
 
+# No cache policy
+header /* {
+    Cache-Control "max-age=0, must-revalidate"
+}
+
 # Match API requests
 route /api/* {
 	uri strip_prefix /api
