@@ -9,7 +9,7 @@
 
 # No cache policy
 header /* {
-    Cache-Control "max-age=0, must-revalidate"
+    Cache-Control "no-cache"
 }
 
 # Match API requests
