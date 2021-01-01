@@ -23,7 +23,7 @@ RUN apt --yes install ca-certificates
 RUN apt update
 
 # Install Caddy & Node
-RUN apt --yes install caddy nodejs npm
+RUN apt --yes install caddy nodejs
 
 # Remove sources lists
 RUN rm /etc/apt/sources.list.d/*
