@@ -3,7 +3,7 @@ FROM debian:buster-slim
 
 # Set image metadata
 LABEL maintainer="hey@nadav.app"
-LABEL description="A simple Node & Caddy base image."
+LABEL description="A simple Node & Caddy image."
 
 # Expose ports
 EXPOSE 80
