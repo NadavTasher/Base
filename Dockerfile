@@ -14,6 +14,7 @@ RUN apt update
 # APT and GPG configurations
 COPY configurations/gpg/node /etc/apt/trusted.gpg.d/node.gpg
 COPY configurations/apt/node /etc/apt/sources.list.d/node.list
+COPY configurations/gpg/caddy /etc/apt/trusted.gpg.d/caddy.gpg
 COPY configurations/apt/caddy /etc/apt/sources.list.d/caddy.list
 
 # Install CA certificates
