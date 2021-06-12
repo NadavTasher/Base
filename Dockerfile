@@ -3,7 +3,7 @@ FROM debian:buster-slim
 
 # Set image metadata
 LABEL maintainer="hey@nadav.app"
-LABEL description="A simple Node & Caddy image."
+LABEL description="Base image for the Webhood template"
 
 # Expose ports
 EXPOSE 80
